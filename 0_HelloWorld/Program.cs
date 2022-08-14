@@ -1,9 +1,18 @@
 ﻿//Change appearance of Console
-Console.Title = "Matrix";
-Console.ForegroundColor = ConsoleColor.DarkGreen;
+//Presentation
+Console.Title = "Skynet";
+Console.ForegroundColor = ConsoleColor.White;
 Console.WindowHeight = 40;
 
-//Presentation
-Console.WriteLine("Hello Chosen One");
-Console.WriteLine("Where is our next adventure?");
-string answer = Console.ReadLine();
+Console.WriteLine("Say SOMetinhg");
+
+Console.ReadLine();
+
+Console.WriteLine("SUS");
+Console.WriteLine("What are you doing");
+
+Console.ReadLine();
+
+Console.WriteLine("Cool im at school");
+
+//sus

@@ -31,7 +31,7 @@ comment
 #endregion
 
 #region Variables
-Console.WriteLine("What is your name?");
+Console.WriteLine("What is your favorite food?");
 
 //<Type> <Name> = <Value> ;
 string myString = "This is how to define a string variable!";
@@ -40,73 +40,32 @@ string myString = "This is how to define a string variable!";
 myString = Console.ReadLine();
 
 //Writing it back to the console
-Console.WriteLine("Aaah, welcome " + myString + ", nice to meet you!");
+Console.WriteLine("Aaah " + myString + " thats a good choice, nice to meet you!");
+Console.WriteLine("My favorite food is Burger with fires");
 #endregion
 
 #region Data types
-Console.WriteLine("Do you want to learn about the simplest data types?");
-/*
-* The four main basic types we we will work with in the beginning are:
-* bool, Int, Float and String   
-* bool or boolean, can only be 'true' or 'false'
-* Int, or integer, is a whole number; 1, 2, 3
-* Float is a decimal number; 3.14 or 7.777
-* Strings is just text found between quotationmarks "This is a string, easy right?"
-*
-* Programmers use these different types to better communicate their thoughts and optimize the program
-* C# have, at the time of writing; 10 different types of numbers, choosing the right ones can be key to your objective.
-*
-* There are many different data types which can be explored in the Microsoft C# documentation, see link below.
-* https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types
-*/
+string StringInputFromConsole;
+Console.WriteLine("Do you want to play Among us?");
 
-string answer = Console.ReadLine();
+StringInputFromConsole = Console.ReadLine();
 
-bool LearnAboutDataTypes = false;
-if(answer == "yes"){
-    LearnAboutDataTypes = true;
+bool BooleanInput = false;
+if(StringInputFromConsole == "yes" || StringInputFromConsole == "no")
+{
+  BooleanInput = true;
 }
 
-if(LearnAboutDataTypes == true){
-    Console.WriteLine("Then you have come to the right place!");
-    Console.WriteLine("The 'bool' type can either be 'true' or 'false', nothing more, nothing less.");
-    Console.WriteLine("When you answered 'yes', a bool named 'LearnAboutDataTypes' was set to 'true'");
-    Console.WriteLine("And allowed for these messages!");
-    Console.WriteLine("...");
-    Console.ReadLine();
-    
-    Console.WriteLine("Now... The next data type we are gonna talk about is the integer, called an 'int'");
-    Console.WriteLine("It is used to store whole numbers, like 1,2,3,4 and so on.");
-    Console.WriteLine("Try inserting an integer now:");
-    string inputFromConsole = Console.ReadLine();
-    int number = int.Parse(inputFromConsole);
-    
-    Console.WriteLine("I have now converted a text string into an integer!");
-    number = number + 1;
-    //number++;
-    //number += 1;
-    Console.WriteLine("We can now do math operations on it, and voila, your number + 1 is equal to = " + number);
-    Console.WriteLine("...");
-    Console.ReadLine();
-
-    Console.WriteLine("Next up we have the Float data type");
-    Console.WriteLine("Float is decimal numbers, you can do math on it, just as we did with the integer");
-    Console.WriteLine("Remember to use 'f'!");
-    float OneThird = 1.0f/3.0f; //Notice the 'f' to indicate this number is a float value
-    Console.WriteLine("Like for example 1.0f/3.0f, which gives : " + OneThird);
-    Console.WriteLine("where as 1/3 gives = " + 1/3 + ". Because the computer thinks it is working with whole numbers (integers)");
-    Console.WriteLine("...");
-    Console.ReadLine();
-
-    Console.WriteLine("Lastly, the string data type.");
-    Console.WriteLine("Strings are text, and can be found between quotation marks");
-    Console.WriteLine("We have used strings to read and write to the console, this line is a string");
-    Console.WriteLine("...");
-    Console.ReadLine();
+if(BooleanInput == true)
+{
+  Console.WriteLine("This is going to be epic!"); 
 }
-Console.WriteLine("...The end...");
-Console.ReadLine(); //Stops program from exiting until we press a key
+else
+{
+  Console.WriteLine("Oh ok do you want to play a boardgame?"); 
+}
 
+Console.ReadLine();
 #endregion
 
 
