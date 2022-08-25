@@ -39,7 +39,7 @@ Console.WriteLine("Nice, do you want to play a boardgame or a videogame?");
     string whatGame = Console.ReadLine();
     if(whatGame == "Among us"){
         Console.WriteLine("Among us wooooooooooo");
-        Console.WriteLine("Hello welcome to among us");
+       Console.WriteLine("Hello welcome to among us");
 Console.WriteLine("Do you want to start");
 
 string startGame = Console.ReadLine();
@@ -96,7 +96,56 @@ switch (farve)
 }
 
 Console.WriteLine("You are an imposter");
-Console.WriteLine("you see pink infront of you what do you do kill or walk by?");
+
+Console.WriteLine("You see pink infront of you what do you do kill or walk");
+
+String killPink = Console.ReadLine();
+
+
+
+if (killPink == "kill") 
+{
+  Console.WriteLine("Orange saw you kill and you got ejected and lost");
+  Thread.Sleep(5000);
+  Environment.Exit(0);
+}
+else if (killPink == "walk")
+{
+  Console.WriteLine("You walked by pink and luckly for you pink ended up trusting you");
+  Thread.Sleep(3000);
+
+}
+else
+{
+  Console.WriteLine("You had to write (kill) or (walk)");
+    Thread.Sleep(5000);
+    Environment.Exit(0);
+}
+
+Console.WriteLine("Orange pressed the button and was sus of pink");
+Thread.Sleep(3000);
+Console.WriteLine("What do you do (agree) with Orange (help) Pink or (turn) on Orange");
+
+String meeting = Console.ReadLine();
+switch(meeting)
+{
+  case "agree":
+    Console.WriteLine("You voted pink out and lost the only one who trusted you and lost");
+    Thread.Sleep(5000);
+    Environment.Exit(0);
+  break;
+  case "help":
+    Console.WriteLine("You ended up keeping pink alive");
+    Thread.Sleep(5000);
+  break;
+  case "turn":
+    Console.WriteLine("You tried voting orange out but they ended op voting you out");
+    Thread.Sleep(5000);
+    Environment.Exit(0);
+  break;
+
+}
+
 string answer = Console.ReadLine();
     }
     else if(whatGame == "Stick Fight"){
