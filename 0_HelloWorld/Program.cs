@@ -19,11 +19,9 @@ string playgame = Console.ReadLine();
 if (playgame == "yes")
 {
     Console.WriteLine("Nice, do you want to play a videogame?");
-    string game = Console.ReadLine();
-    if(game == "yes")
-    {
-        Console.WriteLine("Ok, i got Stick Fight and Minecraft. Which one do you want to play?");
-    }
+    Console.ReadLine();
+    Console.WriteLine("It wouldnt have mattered what you said :), i got Stick Fight and Minecraft. Which one do you want to play?");
+    
     string whatGame = Console.ReadLine();
     
     if (whatGame == "Stick Fight")
@@ -141,7 +139,7 @@ if (playgame == "yes")
                             if (input == "Play Again")
                                 Console.WriteLine("Nice");
                             else if (input == "bye")
-                                break; // <-- used to get out of a loop
+                                break;
                             else
                             {
                                 Console.WriteLine("sry what?");
